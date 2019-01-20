@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BotUI - Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/node_modules/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="/node_modules/botui/build/botui-theme-default.css" />
+  </head>
+
+
+
+  <body>
+    <div class="botui-app-container" id="api-bot">
+      <bot-ui></bot-ui>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB9xec7pOaej2v0J9wGwFxxjCuFQUTia2I",
+    authDomain: "keyboard-2d88e.firebaseapp.com",
+    databaseURL: "https://keyboard-2d88e.firebaseio.com",
+    projectId: "keyboard-2d88e",
+    storageBucket: "keyboard-2d88e.appspot.com",
+    messagingSenderId: "541780629401"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+    <script src ="index.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_rerv" class="main-div" style="display: block;">
+    <h3>Job Offer</h3>
+    <input type="text" placeholder="Job title" id="name_field" />
+    <input type="text" placeholder="Job Location" id="add_field" />
+    <input type="text" placeholder="Job Description..." id="desc_field" style="height: 250;" />
+     <input type="text" placeholder="About Company" id="comdesc_field" style="height: 250;" />
+    <input type="text" placeholder="Company Website" id="url_field" />
+    <button onclick="addoffernew()">Add Offer</button>
+  </div>
+
+  <div id="user_tre" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+ 
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB9xec7pOaej2v0J9wGwFxxjCuFQUTia2I",
+    authDomain: "keyboard-2d88e.firebaseapp.com",
+    databaseURL: "https://keyboard-2d88e.firebaseio.com",
+    projectId: "keyboard-2d88e",
+    storageBucket: "keyboard-2d88e.appspot.com",
+    messagingSenderId: "541780629401"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>

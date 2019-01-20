@@ -1,0 +1,2 @@
+define("siteRegionContainer",["lodash","containerCommon","core"],function(i,n,e){"use strict";var t={displayName:"SiteRegionContainer",mixins:[n.mixins.containerMixin],statics:{useSantaTypes:!0},getSkinProperties:function(){return{inlineContent:{"data-aid":"SITE_REGION_CONTAINER",children:this.props.children}}}};return e.compRegistrar.register("wysiwyg.viewer.components.SiteRegionContainer",t,!0),t});
+//# sourceMappingURL=siteRegionContainer.min.js.map
